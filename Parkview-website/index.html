@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parkview Estate</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-[#f6f1e8] text-[#3d4338]">
+  <header class="sticky top-0 z-30 border-b border-[#d7d2c6] bg-[#f8f4ec]/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div>
+        <div class="text-xl font-semibold tracking-[0.02em] text-[#384034]">Parkview Estate</div>
+        <div class="text-sm text-[#7b7f71]">Rewi Street, Te Awamutu</div>
+      </div>
+
+      <nav class="hidden gap-6 text-sm text-[#58604f] md:flex">
+        <a href="#vision" class="transition hover:text-[#384034]">Vision</a>
+        <a href="#sections" class="transition hover:text-[#384034]">Availability</a>
+        <a href="#why" class="transition hover:text-[#384034]">Why Buy Here</a>
+        <a href="#event" class="transition hover:text-[#384034]">Launch Day</a>
+        <a href="#contact" class="transition hover:text-[#384034]">Contact</a>
+      </nav>
+
+      <a href="#visit" class="rounded-full bg-[#4f5b47] px-5 py-2.5 text-sm font-medium text-[#f8f4ec] shadow-sm transition hover:bg-[#44503d]">
+        Request a Private Site Visit
+      </a>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: linear-gradient(110deg, rgba(246,241,232,.92), rgba(246,241,232,.46)), url('images/hero-render.jpg');"></div>
+    <div class="relative mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-[1.15fr_.85fr] md:py-28">
+      <div class="max-w-2xl">
+        <div class="mb-5 inline-flex rounded-full border border-[#d8d1c2] bg-white/70 px-4 py-2 text-sm text-[#6f7568] backdrop-blur">
+          Stage 1 release • Limited sections remaining • Private viewings now open
+        </div>
+
+        <h1 class="text-4xl font-semibold leading-tight text-[#2f362b] md:text-6xl">
+          Secure your place in one of Te Awamutu’s most desirable new neighbourhoods
+        </h1>
+
+        <p class="mt-6 max-w-xl text-lg leading-8 text-[#646a5d]">
+          Parkview Estate is a premium new neighbourhood on Rewi Street, offering a limited release of sections from $333k. Positioned for both lifestyle and long-term growth, this is an opportunity to secure land in a location where demand continues to rise.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#visit" class="rounded-full bg-[#4f5b47] px-6 py-3 font-medium text-[#f8f4ec] shadow-md transition hover:bg-[#44503d]">
+            Request a Private Site Visit
+          </a>
+          <a href="#event" class="rounded-full border border-[#b9b29f] bg-[#fbf8f2]/90 px-6 py-3 font-medium text-[#4f5b47] transition hover:bg-white">
+            Register for Launch Day
+          </a>
+        </div>
+
+        <div class="mt-10 grid max-w-xl grid-cols-1 gap-4 sm:grid-cols-3 text-center">
+          <div class="rounded-[1.75rem] border border-[#ddd7ca] bg-[#fbf8f2] p-4 shadow-sm">
+            <div class="text-2xl font-semibold text-[#384034]">141</div>
+            <div class="text-sm text-[#7b7f71]">Sections planned</div>
+          </div>
+          <div class="rounded-[1.75rem] border border-[#ddd7ca] bg-[#fbf8f2] p-4 shadow-sm">
+            <div class="text-2xl font-semibold text-[#384034]">From $333k</div>
+            <div class="text-sm text-[#7b7f71]">Entry pricing</div>
+          </div>
+          <div class="rounded-[1.75rem] border border-[#ddd7ca] bg-[#fbf8f2] p-4 shadow-sm">
+            <div class="text-2xl font-semibold text-[#384034]">30 min</div>
+            <div class="text-sm text-[#7b7f71]">Approx. to Hamilton</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="visit" class="self-end rounded-[2rem] border border-[#ddd7ca] bg-[#fbf8f2]/95 p-6 shadow-xl backdrop-blur">
+        <div class="text-sm font-medium uppercase tracking-[0.2em] text-[#8a8d7d]">Private access</div>
+        <h2 class="mt-2 text-2xl font-semibold text-[#2f362b]">Book your private site visit</h2>
+        <p class="mt-3 text-sm leading-7 text-[#6b7164]">
+          Walk the site, understand the masterplan, and explore available opportunities before demand builds further.
+        </p>
+        <form action="https://formspree.io/f/xnjgwawq" method="POST" class="mt-6 space-y-3">
+          <input type="hidden" name="form_type" value="Private Site Visit" />
+          <input type="hidden" name="_subject" value="New Parkview Estate private site visit enquiry" />
+          <input name="name" class="w-full rounded-2xl border border-[#ddd7ca] bg-white px-4 py-3 outline-none transition focus:border-[#7d856f]" placeholder="Full name" required />
+          <input type="email" name="email" class="w-full rounded-2xl border border-[#ddd7ca] bg-white px-4 py-3 outline-none transition focus:border-[#7d856f]" placeholder="Email address" required />
+          <input name="phone" class="w-full rounded-2xl border border-[#ddd7ca] bg-white px-4 py-3 outline-none transition focus:border-[#7d856f]" placeholder="Phone number" />
+          <select name="buyer_type" class="w-full rounded-2xl border border-[#ddd7ca] bg-white px-4 py-3 outline-none transition focus:border-[#7d856f]">
+            <option>I am a first-home buyer</option>
+            <option>I am building my next home</option>
+            <option>I am an investor</option>
+            <option>I would like more information first</option>
+          </select>
+          <button class="w-full rounded-full bg-[#4f5b47] px-4 py-3 font-medium text-[#f8f4ec] transition hover:bg-[#44503d]">
+            Secure My Private Visit
+          </button>
+          <p class="text-xs leading-6 text-[#8a8d7d]">
+            Private site visits are the best way to understand the sections, outlook, layout and current availability.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="vision" class="mx-auto max-w-7xl px-6 py-16">
+    <div class="grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
+      <div class="overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-[#ddd7ca]">
+        <img src="images/street-render.jpg" alt="Parkview Estate architectural render" class="h-full min-h-[380px] w-full object-cover" />
+      </div>
+
+      <div class="rounded-[2rem] bg-[#ebe4d6] p-8 shadow-sm ring-1 ring-[#ddd7ca] md:p-10">
+        <div class="text-sm font-medium uppercase tracking-[0.2em] text-[#8a8d7d]">The vision</div>
+        <h2 class="mt-3 text-3xl font-semibold text-[#2f362b] md:text-4xl">Designed for lifestyle, not just land</h2>
+        <p class="mt-5 text-lg leading-8 text-[#646a5d]">
+          Parkview Estate has been shaped to feel calm, cohesive and enduring — with tree-lined streets, thoughtful spacing and a neighbourhood character that gives buyers confidence from the very beginning.
+        </p>
+        <p class="mt-4 leading-8 text-[#646a5d]">
+          This is the kind of place that feels considered before a home is even built. That matters to families, to owner-occupiers, and to buyers looking for long-term resale appeal.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-6 pb-8">
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <div class="rounded-[1.75rem] border border-[#ddd7ca] bg-[#fbf8f2] p-6 shadow-sm">
+        <div class="h-2 w-10 rounded-full bg-[#9da58d]"></div>
+        <p class="mt-4 leading-7 text-[#646a5d]">Minutes from Te Awamutu town centre, schools and everyday essentials</p>
+      </div>
+      <div class="rounded-[1.75rem] border border-[#ddd7ca] bg-[#fbf8f2] p-6 shadow-sm">
+        <div class="h-2 w-10 rounded-full bg-[#9da58d]"></div>
+        <p class="mt-4 leading-7 text-[#646a5d]">A calmer lifestyle setting with room to build, grow and enjoy more space</p>
+      </div>
+      <div class="rounded-[1.75rem] border border-[#ddd7ca] bg-[#fbf8f2] p-6 shadow-sm">
+        <div class="h-2 w-10 rounded-full bg-[#9da58d]"></div>
+        <p class="mt-4 leading-7 text-[#646a5d]">Positioned in a regional market attracting buyers seeking value beyond Hamilton</p>
+      </div>
+      <div class="rounded-[1.75rem] border border-[#ddd7ca] bg-[#fbf8f2] p-6 shadow-sm">
+        <div class="h-2 w-10 rounded-full bg-[#9da58d]"></div>
+        <p class="mt-4 leading-7 text-[#646a5d]">A considered masterplanned neighbourhood with long-term appeal</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sections" class="mx-auto max-w-7xl px-6 py-20">
+    <div class="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+      <div>
+        <div class="text-sm font-medium uppercase tracking-[0.2em] text-[#8a8d7d]">Availability</div>
+        <h2 class="mt-2 text-3xl font-semibold text-[#2f362b]">Live section availability</h2>
+      </div>
+      <div class="text-sm text-[#7b7f71]">The map below helps buyers see current market momentum at a glance.</div>
+    </div>
+
+    <div class="grid gap-6 lg:grid-cols-[1.2fr_.8fr]">
+      <div class="overflow-hidden rounded-[2rem] border border-[#ddd7ca] bg-white shadow-sm">
+        <img src="images/site-map.png" alt="Parkview Estate availability map" class="w-full object-cover" />
+      </div>
+
+      <div class="rounded-[2rem] border border-[#ddd7ca] bg-[#fbf8f2] p-8 shadow-sm">
+        <div class="text-sm font-medium uppercase tracking-[0.2em] text-[#8a8d7d]">Availability</div>
+        <h3 class="mt-3 text-2xl font-semibold text-[#2f362b]">See what’s available and act with confidence</h3>
+        <p class="mt-4 leading-8 text-[#646a5d]">
+          The availability map gives you a clear view of current opportunities within Parkview Estate. You can see which sections are still available and identify positions that best suit your lifestyle and future plans.
+        </p>
+        <p class="mt-4 leading-8 text-[#646a5d]">
+          With strong early demand, availability is changing. Booking a private visit allows you to walk the land, compare options, and secure a section before the next stage of buyers enters the market.
+        </p>
+        <a href="#visit" class="mt-8 inline-flex w-full justify-center rounded-full bg-[#4f5b47] px-4 py-3 font-medium text-[#f8f4ec] transition hover:bg-[#44503d]">
+          Request a Private Site Visit
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="mx-auto max-w-7xl px-6 py-20">
+    <div class="grid gap-6 lg:grid-cols-[1fr_1fr]">
+      <div class="overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-[#ddd7ca]">
+        <img src="images/hero-render.jpg" alt="Aerial render of Parkview Estate and surrounding landscape" class="h-full min-h-[460px] w-full object-cover" />
+      </div>
+
+      <div class="rounded-[2rem] bg-[#f3eee4] p-8 shadow-sm ring-1 ring-[#ddd7ca] md:p-10">
+        <div class="text-sm font-medium uppercase tracking-[0.2em] text-[#8a8d7d]">Why buy here</div>
+        <h2 class="mt-3 text-3xl font-semibold text-[#2f362b] md:text-4xl">A rare opportunity in a high-demand, fast-growing market</h2>
+        <p class="mt-5 leading-8 text-[#646a5d]">
+          Te Awamutu continues to appeal to buyers who want better value than larger centres without giving up convenience. Rewi Street places Parkview Estate within easy reach of town, schools, local services and the wider Hamilton employment catchment.
+        </p>
+        <p class="mt-4 leading-8 text-[#646a5d]">
+          For first-home buyers, it is a more accessible way into the market. For families, it offers more room and a calmer environment. For investors and future-focused buyers, it offers entry into a well-positioned regional location with genuine long-term appeal.
+        </p>
+        <p class="mt-4 font-medium leading-8 text-[#384034]">
+          Buy early, secure choice, and position yourself before the next wave of demand arrives.
+        </p>
+        <a href="#visit" class="mt-8 inline-flex rounded-full bg-[#4f5b47] px-6 py-3 font-medium text-[#f8f4ec] transition hover:bg-[#44503d]">
+          Request a Private Site Visit
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-6 pb-20">
+    <div class="grid gap-6 lg:grid-cols-[.95fr_1.05fr]">
+      <div class="rounded-[2rem] bg-[#ebe4d6] p-8 shadow-sm ring-1 ring-[#ddd7ca] md:p-10">
+        <div class="text-sm font-medium uppercase tracking-[0.2em] text-[#8a8d7d]">Project progress</div>
+        <h2 class="mt-3 text-3xl font-semibold text-[#2f362b]">From vision to reality</h2>
+        <p class="mt-5 leading-8 text-[#646a5d]">
+          Great projects earn trust when buyers can see both the vision and the progress. Parkview Estate is not just a concept — it is a real development taking shape.
+        </p>
+        <p class="mt-4 leading-8 text-[#646a5d]">
+          Showing construction progress helps reassure buyers that momentum is real, timelines are moving, and the opportunity is grounded in something tangible.
+        </p>
+      </div>
+
+      <div class="overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-[#ddd7ca]">
+        <img src="images/progress-aerial.png" alt="Parkview Estate construction progress aerial" class="h-full min-h-[380px] w-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <section id="event" class="mx-auto max-w-7xl px-6 pb-20">
+    <div class="grid gap-6 lg:grid-cols-[.95fr_1.05fr]">
+      <div class="rounded-[2rem] bg-[#ebe4d6] p-8 shadow-sm ring-1 ring-[#ddd7ca] md:p-10">
+        <div class="text-sm font-medium uppercase tracking-[0.2em] text-[#8a8d7d]">Launch event</div>
+        <h2 class="mt-3 text-3xl font-semibold text-[#2f362b] md:text-4xl">Open Day — 12 April, 10am to 2pm</h2>
+        <p class="mt-5 leading-8 text-[#646a5d]">
+          Join us for a relaxed and welcoming launch event where you can explore the land, experience the location, and speak directly with professionals to make confident decisions.
+        </p>
+        <div class="mt-6 grid gap-3 sm:grid-cols-2">
+          <div class="rounded-[1.5rem] border border-[#d6cfbf] bg-[#f8f4ec] p-4 text-[#58604f]">Bouncy castle + kids zone</div>
+          <div class="rounded-[1.5rem] border border-[#d6cfbf] bg-[#f8f4ec] p-4 text-[#58604f]">Coffee cart / food truck</div>
+          <div class="rounded-[1.5rem] border border-[#d6cfbf] bg-[#f8f4ec] p-4 text-[#58604f]">Walk the available sections</div>
+          <div class="rounded-[1.5rem] border border-[#d6cfbf] bg-[#f8f4ec] p-4 text-[#58604f]">Meet the professionals — builders, accountants and lawyers</div>
+        </div>
+      </div>
+
+      <div class="rounded-[2rem] border border-[#ddd7ca] bg-[#fbf8f2] p-8 shadow-sm ring-1 ring-[#ddd7ca]">
+        <div class="text-sm font-medium uppercase tracking-[0.2em] text-[#8a8d7d]">Event registration</div>
+        <h3 class="mt-2 text-2xl font-semibold text-[#2f362b]">Be first to receive launch day access</h3>
+        <p class="mt-3 leading-7 text-[#646a5d]">
+          Register your interest to receive early access to available sections, priority updates, and direct guidance following the launch event.
+        </p>
+        <form action="https://formspree.io/f/xnjgwawq" method="POST" class="mt-6 space-y-3">
+          <input type="hidden" name="form_type" value="Launch Day Registration" />
+          <input type="hidden" name="_subject" value="New Parkview Estate launch day registration" />
+          <input name="name" class="w-full rounded-2xl border border-[#ddd7ca] bg-white px-4 py-3 outline-none transition focus:border-[#7d856f]" placeholder="Full name" required />
+          <input type="email" name="email" class="w-full rounded-2xl border border-[#ddd7ca] bg-white px-4 py-3 outline-none transition focus:border-[#7d856f]" placeholder="Email address" required />
+          <input name="phone" class="w-full rounded-2xl border border-[#ddd7ca] bg-white px-4 py-3 outline-none transition focus:border-[#7d856f]" placeholder="Phone number" />
+          <button class="w-full rounded-full bg-[#4f5b47] px-4 py-3 font-medium text-[#f8f4ec] transition hover:bg-[#44503d]">
+            Secure My Spot
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-6 pb-20">
+    <div class="rounded-[2rem] bg-[#4f5b47] px-8 py-10 text-[#f8f4ec] shadow-lg md:px-12">
+      <div class="max-w-3xl">
+        <div class="text-sm font-medium uppercase tracking-[0.2em] text-[#d8ddcf]">Next step</div>
+        <h2 class="mt-3 text-3xl font-semibold md:text-4xl">Experience Parkview for yourself</h2>
+        <p class="mt-5 text-lg leading-8 text-[#eef0ea]">
+          Book a private site visit to walk the land, understand the layout, and secure your preferred section. For serious buyers, this is where opportunity turns into action.
+        </p>
+        <a href="#visit" class="mt-8 inline-flex rounded-full bg-[#f8f4ec] px-6 py-3 font-medium text-[#44503d] transition hover:bg-white">
+          Request a Private Site Visit
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="border-t border-[#d7d2c6] bg-[#f8f4ec]">
+    <div class="mx-auto grid max-w-7xl gap-10 px-6 py-12 md:grid-cols-3">
+      <div>
+        <div class="text-xl font-semibold text-[#384034]">Parkview Estate</div>
+        <p class="mt-3 leading-7 text-[#6b7164]">
+          A refined new neighbourhood opportunity on Rewi Street, Te Awamutu.
+        </p>
+      </div>
+
+      <div>
+        <div class="font-medium text-[#384034]">Quick links</div>
+        <div class="mt-3 space-y-2 text-[#6b7164]">
+          <div>Request a private site visit</div>
+          <div>Register for launch day</div>
+          <div>View current availability</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="font-medium text-[#384034]">Contact</div>
+        <div class="mt-3 space-y-2 text-[#6b7164]">
+          <div>Rewi Street, Te Awamutu</div>
+          <div>Liston — 020 4170 0930</div>
+          <div>contact@parkview.estate</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
