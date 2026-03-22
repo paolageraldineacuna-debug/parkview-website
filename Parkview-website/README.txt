@@ -1,1 +1,0 @@
-Open index.html in a browser to preview the latest Parkview Estate design. Upload the whole folder to GitHub when you're ready.
